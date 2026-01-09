@@ -1,0 +1,20 @@
+[install]
+# Use exact versions for better reproducibility
+exact = true
+
+[install.scopes]
+# Configure any scoped packages if needed
+
+[build]
+# Build configuration for the main entry point
+entrypoints = ["src/index.ts"]
+outdir = "build"
+target = "node"
+format = "esm"
+splitting = false
+minify = false
+sourcemap = "external"
+
+[dev]
+# Development server configuration
+port = 3000
